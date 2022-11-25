@@ -1,0 +1,20 @@
+{
+  "name": "films",
+  "version": "1.0.0",
+  "description": "Node.js app for viewing details about movies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheuyin/node-films.git"
+  },
+  "author": "Stanley Cheung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheuyin/node-films/issues"
+  },
+  "homepage": "https://github.com/cheuyin/node-films#readme",
+  "dependencies": {}
+}
