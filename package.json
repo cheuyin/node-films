@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "films",
   "version": "1.0.0",
   "description": "Node.js app for viewing details about movies",
@@ -16,5 +17,7 @@
     "url": "https://github.com/cheuyin/node-films/issues"
   },
   "homepage": "https://github.com/cheuyin/node-films#readme",
-  "dependencies": {}
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  }
 }
