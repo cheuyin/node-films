@@ -1,2 +1,2 @@
-import getMovie from "./modules/getMovie.js";
+const movieData = require("./modules/movieData");
 
