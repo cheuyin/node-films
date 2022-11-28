@@ -1,24 +1,18 @@
 <figure class="card">
-	<div class="card__emoji">{%IMAGE%}{%IMAGE%}</div>
-	<div class="card__title-box">
-		<h2 class="card__title">{%PRODUCTNAME%}</h2>
+	<div class="card__poster">
+		<img src="{%POSTER%}" placeholder="movie-poster" />
 	</div>
 
-	<div class="card__details">
-        <div class="card__detail-box {%NOT_ORGANIC%}">
-            <h6 class="card__detail card__detail--organic">Organic!</h6>
-		</div>
-        
-        <div class="card__detail-box">
-            <h6 class="card__detail">{%QUANTITY%} per 📦</h6>
-        </div>
+	<div class="card__title">
+		<h2 class="movie__title">{%TITLE%} ({%YEAR%})</h2>
+	</div>
 
-		<div class="card__detail-box">
-			<h6 class="card__detail card__detail--price">${%PRICE%}</h6>
-		</div>
+	<div class="card__rating">
+		<h6 class="description">IMDb Rating</h6>
+		<p class="rating">{%RATING%}</p>
 	</div>
 
 	<a class="card__link" href="/product?id={%ID%}">
-		<span>Detail <i class="emoji-right">👉</i></span>
+		<span>View More <i class="emoji-right">👉</i></span>
 	</a>
 </figure>
