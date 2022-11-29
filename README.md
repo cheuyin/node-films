@@ -7,8 +7,8 @@ Node.js app for viewing details about your favourite movies.
 3. App will run on localhost port 8000
 
 ## Demo Pics
-![movieQuery.json](https://github.com/cheuyin/node-films/blob/main/demo-img-3.png?raw=true)
+<img src="https://github.com/cheuyin/node-films/blob/main/docs/demo-img-3.png?raw=true" alt="movieQuery.json" width="400px"/>
 
-![Home page](https://github.com/cheuyin/node-films/blob/main/demo-img-1.png?raw=true)
+<img src="https://github.com/cheuyin/node-films/blob/main/docs/demo-img-1.png?raw=true" alt="Home page" width="400px"/>
 
-![Details page](https://github.com/cheuyin/node-films/blob/main/demo-img-1.png?raw=true)
+<img src="https://github.com/cheuyin/node-films/blob/main/docs/demo-img-2.png?raw=true" alt="Details page" width="400px"/>
