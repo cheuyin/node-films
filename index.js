@@ -29,7 +29,10 @@ const server = http.createServer((req, res) => {
 
 		Promise.all(movieData).then((values) => {
 			const cardsHTML = values
-				.map((movie) => replaceTemplate(templateCard, movie))
+				.map((movie, index) => {
+					movie.id = index;
+					return replaceTemplate(templateCard, movie);
+				})
 				.join("");
 			const output = templateHome.replace("{%PRODUCT_CARDS%}", cardsHTML);
 			res.end(output);
@@ -39,7 +42,10 @@ const server = http.createServer((req, res) => {
 			"Content-type": "text/html",
 		});
 
-		res.end(templateDetails);
+		movieData[query.id].then((movieData) => {
+			const moviePageHTML = replaceTemplate(templateDetails, movieData);
+			res.end(moviePageHTML);
+		});
 	} else {
 		res.writeHead(404);
 		res.end("<h1>Page not found</h1>");
